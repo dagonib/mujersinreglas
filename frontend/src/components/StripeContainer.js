@@ -4,8 +4,6 @@
 // import PaymentForm from './PaymentForm';
 // import '../styles/stripeContainer.styles.scss';
 
-// const PUBLIC_KEY =
-//   'pk_live_51JQUjJGxoe1VGxFRQEdcOT8syUhNd5rI0GSWeh8wIpkT7Fy2mphyz3P2nGASgBgGkj9Uj9vk7GX3Smg1YgywS2az007QbpRE3h';
 
 // const stripeTestPromise = loadStripe(PUBLIC_KEY);
 
