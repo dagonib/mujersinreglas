@@ -1,0 +1,221 @@
+@use '../../../abstracts' as *;
+
+.info-agenda {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+
+  &__right {
+    & .title {
+      font-weight: 700;
+    }
+
+    & .prizebox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    & .prize {
+      font-size: 3rem;
+      color: $color-primary;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    & .prize-before {
+      font-size: 1rem;
+      text-decoration: line-through;
+      color: rgb(185, 185, 185);
+    }
+
+    & .detail-prize {
+      font-size: 0.8rem;
+    }
+
+    & .warning {
+      background-color: rgb(233 172 67);
+      padding: 0.6rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    & .init-sell {
+      background-color: rgb(131, 176, 196);
+      border: 1px solid rgb(83, 122, 139);
+      padding: 0.6rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    & .sellbox {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+      margin-bottom: 2rem;
+
+      & > .form-control {
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      & > * {
+        width: max-content;
+      }
+    }
+
+    & .extrainfo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      column-gap: 2rem;
+      margin-top: 2rem;
+      background-color: white;
+      padding: 0.5rem;
+
+      & > * {
+        justify-self: center;
+        text-align: center;
+        height: 100%;
+        padding: 0.5rem;
+
+        &:hover {
+          background-color: $color-primary-light;
+          color: $color-accent;
+        }
+      }
+    }
+
+    & .info {
+      color: $color-dark;
+      font-size: 1rem;
+    }
+
+    & .info li {
+      list-style-type: disc;
+    }
+
+    & .info-list {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.sellbox .btnCounter {
+  display: flex;
+  flex-grow: initial;
+  flex-direction: row;
+
+  & button {
+    font-size: 3rem;
+    line-height: 0;
+  }
+
+  & .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border: 3px solid $color-primary;
+    font-size: 1.4rem;
+  }
+}
+
+// Accordion
+.info-agenda {
+  & .accordion-item:first-of-type,
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: initial;
+  }
+
+  & .accordion-button:not(.collapsed) {
+    background-color: $color-primary-light;
+    color: $color-primary;
+  }
+
+  & .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .info-agenda {
+    margin-top: 6rem;
+
+    & .maininfo {
+      text-align: center;
+    }
+
+    &__right {
+      & .extrainfo {
+        margin-top: 0;
+      }
+
+      & .prizebox {
+        justify-content: center;
+      }
+
+      & .sellbox {
+        justify-content: center;
+        row-gap: 1rem;
+      }
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .info-agenda {
+    margin-top: 0;
+
+    &__row {
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      padding: 0 5rem;
+    }
+
+    &__right {
+      & .maininfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin-top: 7rem;
+
+        & .prizebox {
+          justify-content: center;
+        }
+      }
+
+      & .sellbox {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .info-agenda {
+    &__row {
+      padding: 0 1rem;
+    }
+
+    &__left {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .info-agenda {
+    margin-top: 3rem;
+  }
+}

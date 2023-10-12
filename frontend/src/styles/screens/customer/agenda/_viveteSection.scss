@@ -1,0 +1,57 @@
+@use '../../../abstracts' as *;
+
+.vivetes {
+  & .types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    margin: 0 auto;
+  }
+
+  & .vivete {
+    min-width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+
+    & .title {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      text-align: center;
+      font-family: var(--prime-font-family);
+      font-size: 1.2rem;
+      color: $color-primary;
+    }
+
+    & .image {
+      grid-column: 1;
+      grid-row: 2;
+      height: 85px;
+      justify-self: flex-end;
+      align-self: center;
+    }
+
+    & .elements {
+      grid-column: 2;
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.2rem;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .vivetes {
+    & .types {
+      padding: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@use '../../../abstracts' as *;
+
+.details-product {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+
+  & .details-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    align-items: center;
+
+    &__image {
+      width: 300px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.8rem;
+    }
+
+    &__name {
+      font-weight: 700;
+    }
+
+    &__price {
+      & p {
+        font-size: 3rem;
+        color: #d4c6bd;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      & span {
+        font-size: 0.8rem;
+      }
+    }
+
+    &__size {
+      border-top: 1px solid $color-primary;
+      padding-top: 1rem;
+      font-size: 1rem;
+    }
+
+    &__type {
+      & .form-select {
+        padding: 1rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+        border: 1px solid $color-primary;
+        border-radius: initial;
+        width: max-content;
+      }
+    }
+  }
+
+  & .main-action-button {
+    width: max-content;
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .details-product {
+    & .details-box {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  }
+}

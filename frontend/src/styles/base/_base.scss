@@ -1,0 +1,327 @@
+// BASE
+@use '../abstracts' as *;
+
+// GENERAL
+body {
+  font-family: var(--body-font-family);
+  background-color: $color-light-100;
+}
+
+main {
+}
+
+.section {
+  margin-top: 8rem;
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .section {
+    margin-top: 4rem;
+  }
+}
+
+/* For normal devices */
+@media screen and (max-width: 576px) {
+  .section {
+    & .container-lg {
+      padding: 0;
+    }
+  }
+}
+
+.nav-link {
+  color: $color-dark;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-primary;
+  }
+}
+/******-----------------BUTTON-------------------------*/
+
+.main-btn {
+  font-size: 1.2rem;
+  color: #464646;
+  display: inline-block;
+  background-color: #d4c6bd;
+  border-radius: 0;
+  border: none;
+  font-family: var(--body-font-family);
+  padding: 8px 18px;
+
+  &:hover {
+    background-color: $color-accent;
+    color: #ffffff;
+  }
+}
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .main-btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .main-btn {
+    font-size: 1rem;
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .main-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .main-btn {
+    font-size: 1rem;
+  }
+}
+
+/* Extra-Small: Desde 0px hasta 350px */
+@media screen and (max-width: 350px) {
+  .main-btn {
+    font-size: 1rem;
+  }
+}
+
+.privacy-btn {
+  &:hover {
+    color: $color-primary-light;
+  }
+}
+
+/*----------------------------------------------------*/
+
+/*------ IMAGE --------*/
+.image {
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+/*------ TYPOGRAFIAS --------*/
+.title-hero {
+  @include font-size($title-hero-font-sizes);
+  line-height: 1.4;
+  color: $color-light-100;
+  font-weight: 900;
+}
+
+.title-hero-italic {
+  font-family: var(--prime-font-family);
+}
+
+.title-section {
+  @include font-size($title-section-font-sizes);
+  line-height: 1.2;
+  color: $color-accent;
+  font-weight: 900;
+}
+/* Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .title-section {
+    line-height: 1.1;
+  }
+}
+
+.title-md-section {
+  @include font-size($title-md-section-font-sizes);
+  line-height: 1.2;
+  color: $color-accent;
+  font-weight: 900;
+}
+
+.title-md-cursive-section {
+  font-family: var(--prime-font-family);
+  @include font-size($title-md-cursive-section-font-sizes);
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.title-sm-section {
+  text-transform: uppercase;
+  @include font-size($title-sm-section-font-sizes);
+  color: $color-primary;
+  line-height: 1.4;
+}
+
+.message {
+  @include font-size($message-font-sizes);
+  color: $color-primary;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.subtitle {
+  @include font-size($subtitle-font-sizes);
+  color: $color-dark;
+  line-height: 1.4;
+}
+
+.paragraph {
+  font-family: var(--body-font-family);
+  @include font-size($paragraph-font-sizes);
+  color: $color-dark;
+  line-height: 1.4;
+
+  &-alt {
+    font-family: var(--prime-font-family);
+  }
+}
+
+.info {
+  font-family: var(--body-font-family);
+  @include font-size($info-font-sizes);
+  color: $color-light-200;
+  line-height: 1.4;
+}
+
+/*------------- BUTTONS ----------- */
+
+.inline-block-button {
+  display: inline-block;
+}
+
+.link-button {
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+
+/*------------- CAROUSEL ----------- */
+.carousel-indicators [data-bs-target] {
+  background-color: $color-primary;
+  border-bottom: 0;
+  border-top: 0;
+  height: 5px;
+  transform: translateY(70px);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+// Borrar
+/*--------------- SECCIONES----------------------- */
+//--Normal
+.section-title {
+  font-family: var(--body-font-family);
+  @include font-size($section-title-font-size);
+  color: $color-dark;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.prime-section-title {
+  font-family: var(--prime-font-family);
+  @include font-size($section-title-font-size);
+  color: $color-dark;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.text-paragraph {
+  font-family: var(--body-font-family);
+  @include font-size($paragraph-font-sizes);
+  color: $color-dark;
+  line-height: 1.4;
+}
+
+//--Marked
+.section-title-marked {
+  font-family: var(--body-font-family);
+  @include font-size($section-title-marked-font-size);
+  color: $color-dark;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.text-paragraph-marked {
+  font-family: var(--body-font-family);
+  @include font-size($paragraph-marked-font-sizes);
+  color: $color-dark;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/*------ Button --------*/
+.action-button {
+  background-color: $color-primary;
+  border-radius: 0;
+  border: none;
+  font-family: var(--body-font-family);
+  @include font-size($button-font-sizes);
+  color: $color-light-100;
+  padding: 8px 18px;
+  width: fit-content;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+/*------------- SECCIONES ALTERNATIVAS----------- */
+/*------ Hero --------*/
+.hero-title {
+  font-family: var(--body-font-family);
+  @include font-size($hero-title-font-size);
+  color: $color-accent;
+  line-height: 1.2;
+}
+
+.prime-title {
+  font-family: var(--prime-font-family);
+  @include font-size($prime-title-font-size);
+  line-height: 1;
+}
+
+.prime-paragraph {
+  font-family: var(--prime-font-family);
+  @include font-size($prime-paragraph-font-size);
+  color: $color-dark;
+  line-height: 1;
+}
+
+/*------ Subscription --------*/
+.text-paragraph-alt {
+  font-family: var(--body-font-family);
+  color: $color-dark;
+  line-height: 1.4;
+}
+
+/*------ Form --------*/
+.text-input-alt {
+  font-family: var(--body-font-family);
+  @include font-size($input-alt-font-sizes);
+  color: $color-light-200;
+  line-height: 1.4;
+}
+
+/*------ Button --------*/
+
+/*----- Links ------- */
+.text-link-alt {
+  font-family: var(--body-font-family);
+  @include font-size($text-link-alt-font-size);
+  color: $color-dark;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.text-link-alt--small {
+  font-family: var(--body-font-family);
+  font-size: 0.7rem;
+  color: $color-light-200;
+}

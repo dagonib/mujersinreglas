@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+.img_logo {
+  width: 160px;
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  filter: invert(1);
+}
+
+.footer-title {
+  font-family: var(--prime-font-family);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #b1b1b1;
+}
+
+.footer-text {
+  font-family: 'Barlow', Sans-serif;
+  color: #000000;
+  font-size: 0.9rem;
+  color: #b1b1b1 !important;
+
+  & .bi-linkedin {
+    margin-left: 0.4rem;
+    color: #b1b1b1;
+  }
+}
+
+.footer .point {
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  color: #b1b1b1 !important;
+}
+
+/* Medium: Desde 577px hasta 768px */
+// @media screen and (max-width: 768px) {
+//   .footer-title {
+//     font-size: 1.5rem;
+//   }
+// }

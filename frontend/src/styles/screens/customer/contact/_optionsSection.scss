@@ -1,0 +1,50 @@
+@use '../../../abstracts' as *;
+
+.options {
+  margin-top: 4rem;
+
+  & .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 1.8rem;
+  }
+
+  & .item {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 0 1rem 2rem;
+
+    & h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      background-color: $color-primary;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .options {
+    & .list {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1.8rem;
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .options {
+    & .list {
+      grid-template-columns: 1fr;
+      row-gap: 1.8rem;
+    }
+  }
+}

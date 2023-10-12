@@ -1,0 +1,15 @@
+.media {
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    padding: 1rem;
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.8rem;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: $color-primary-light;
+  border-radius: initial;
+
+  &__image {
+    width: 150px;
+  }
+
+  & .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  &__name {
+    font-weight: 700;
+    color: $color-primary;
+    text-align: center;
+  }
+
+  &__price {
+    color: $color-accent;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  & p {
+    font-size: 0.9rem;
+  }
+
+  & .btn {
+    margin-top: 1rem;
+  }
+}

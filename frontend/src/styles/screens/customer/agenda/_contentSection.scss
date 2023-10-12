@@ -1,0 +1,60 @@
+@use '../../../abstracts' as *;
+
+.content {
+  & .title {
+    text-align: center;
+  }
+
+  & .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    & .feature {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      padding: 1rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      background-color: rgba(245, 240, 237, 0.7);
+
+      & article,
+      & .icon {
+        color: $color-dark;
+      }
+
+      & article span {
+        font-family: var(--prime-font-family);
+        font-size: 1.4rem;
+      }
+
+      & .icon {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .content {
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .content {
+    & .features {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .content {
+    padding: 0 1rem;
+  }
+}

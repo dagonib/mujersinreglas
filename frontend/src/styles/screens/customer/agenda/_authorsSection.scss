@@ -1,0 +1,19 @@
+@use '../../../abstracts' as *;
+
+.authors {
+  .react-multi-carousel {
+    &-list {
+      & button {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .react-multiple-carousel__arrow {
+    background: $color-primary;
+
+    &::before {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.invoice-print {
+  & .invoice-button {
+    display: flex;
+    justify-content: center;
+
+    & button {
+      margin-bottom: 4rem;
+      width: fit-content;
+    }
+  }
+}

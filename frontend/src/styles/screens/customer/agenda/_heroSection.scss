@@ -1,0 +1,242 @@
+@use '../../../components' as *;
+@use '../../../abstracts' as *;
+
+.hero-agenda {
+  margin-top: 3rem;
+
+  & .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+    align-items: end;
+  }
+
+  & .header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+    border-bottom: 0px solid black;
+
+    &__name {
+      line-height: 1.2;
+      color: $color-accent;
+      font-weight: 900;
+      font-family: var(--prime-font-family);
+      text-align: left;
+      font-size: 5.5rem;
+    }
+
+    &__title {
+      font-size: 3.5rem;
+      line-height: 1.4;
+      color: #3d5361;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      color: #d4c6bd;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .data {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__description {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+      & .emphasized {
+        font-family: var(--prime-font-family);
+        font-size: 2rem;
+        line-height: 1;
+      }
+    }
+
+    &__call {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .imagebox {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+
+  & .title {
+    line-height: 1.2;
+    color: $color-accent;
+    font-weight: 900;
+    font-family: var(--prime-font-family);
+    text-align: left;
+    font-size: 5.5rem;
+  }
+
+  & .title-hero {
+    color: $color-accent;
+  }
+}
+
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .hero-agenda {
+    margin-top: 2rem;
+
+    & .content {
+    }
+
+    & .header {
+      &__name {
+        font-size: 4.5rem;
+      }
+
+      &__title {
+        font-size: 3.3rem;
+      }
+      &__subtitle {
+        font-size: 1.4rem;
+      }
+    }
+
+    & .data {
+      &__description {
+        font-size: 1.3rem;
+        & .emphasized {
+          font-size: 1.9rem;
+        }
+      }
+
+      &__call {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .hero-agenda {
+    & .content {
+    }
+
+    & .header {
+      grid-column: 1 / -1;
+      &__name {
+        font-size: 3.6rem;
+      }
+
+      &__title {
+        font-size: 2.9rem;
+      }
+      &__subtitle {
+        font-size: 1.3rem;
+      }
+    }
+
+    & .data {
+      &__description {
+        font-size: 1.2rem;
+        & .emphasized {
+          font-size: 1.8rem;
+        }
+      }
+
+      &__call {
+        font-size: 1.1rem;
+      }
+    }
+
+    & .imagebox {
+      grid-row: 2 / -1;
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .hero-agenda {
+    & .content {
+      row-gap: 1rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    & .header {
+      grid-column: 1/-1;
+      &__name {
+        font-size: 2.7rem;
+      }
+
+      &__title {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+      }
+
+      &__subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+      }
+    }
+
+    & .data {
+      grid-column: 1/2;
+      align-self: flex-start;
+
+      &__description {
+        font-size: 1rem;
+
+        & .emphasized {
+          font-size: 1.6rem;
+        }
+      }
+
+      &__call {
+        font-size: 1rem;
+      }
+    }
+
+    & .imagebox {
+      grid-row: 2/ -1;
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .hero-agenda {
+    & .content {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 1fr min-content;
+    }
+    & .header {
+      grid-row: 1 / 2;
+      &__name {
+        font-size: 1.7rem;
+      }
+
+      &__title {
+        font-size: 1.4rem;
+      }
+    }
+
+    & .data {
+      grid-column: 1/-1;
+      grid-row: 3 / -1;
+    }
+
+    & .imagebox {
+      grid-column: 1/-1;
+      grid-row: 2 / 3;
+    }
+  }
+}

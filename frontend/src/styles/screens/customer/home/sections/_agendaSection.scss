@@ -1,0 +1,163 @@
+@use '../../../../abstracts' as *;
+
+.agenda {
+  background-image: url('../../../../../assets/images/home/agenda-back-1.png');
+  padding: 5rem 0;
+  margin-top: 10rem;
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 4rem;
+    padding: 1rem;
+  }
+
+  &__header {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    text-align: center;
+
+    & .creation {
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    & h1 {
+      font-size: 3.6rem;
+      color: $color-dark;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    & h1.cursive {
+      font-family: var(--prime-font-family);
+      font-size: 4rem;
+    }
+  }
+
+  &__image {
+    grid-column: 1 / 1;
+    grid-row: 2/ -1;
+    width: 200px;
+  }
+
+  &__info {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary-light;
+    background: linear-gradient(
+      90deg,
+      $color-primary-light 0%,
+      rgba(245, 240, 237, 0.75) 61%
+    );
+    padding: 1rem;
+
+    & p {
+      color: $color-dark;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .agenda {
+    &__header {
+      & .creation {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .agenda {
+    &__header {
+      & .creation {
+        font-size: 1.6rem;
+      }
+
+      & h1 {
+        font-size: 2.8rem;
+      }
+
+      & h1.cursive {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .agenda {
+    &__header {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .agenda {
+    margin-top: 4rem;
+    &__row {
+      grid-template-rows: min-content 1fr min-content;
+      grid-template-columns: 1fr;
+    }
+
+    &__header {
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+
+      & .creation {
+        font-size: 1.4rem;
+      }
+
+      & h1 {
+        font-size: 2.3rem;
+      }
+
+      & h1.cursive {
+        font-size: 2.9rem;
+      }
+    }
+
+    &__image {
+      grid-row: 2 / 2;
+      grid-column: 1 / 1;
+    }
+
+    &__info {
+      grid-row: 3 / -1;
+      grid-column: 1 / 1;
+    }
+  }
+}
+
+/* Extra-Small: Desde 0px hasta 350px */
+@media screen and (max-width: 350px) {
+  .agenda {
+    margin-top: 4rem;
+    &__header {
+      & h1 {
+        font-size: 2.2rem;
+      }
+
+      & h1.cursive {
+        font-size: 2.7rem;
+      }
+    }
+  }
+}

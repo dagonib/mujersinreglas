@@ -1,0 +1,9 @@
+@use '../../../abstracts' as *;
+
+.phrase {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  & p {
+  }
+}

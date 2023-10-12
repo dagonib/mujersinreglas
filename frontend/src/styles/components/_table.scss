@@ -1,0 +1,54 @@
+@use '../abstracts/colors' as *;
+
+.table {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+
+  & tr > th {
+    margin: 0;
+    padding: 0;
+    padding-left: 0.5rem;
+  }
+
+  & tr th:first-child {
+    width: 10px;
+  }
+
+  & tr > td {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-left: 0.5rem;
+  }
+
+  & tr td:last-child {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+  & button,
+  & a {
+    width: 50px;
+    background-color: $color-primary;
+    border-color: transparent;
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    height: max-content;
+    padding: 2px 0;
+  }
+}
+
+.btn-create {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: $color-primary;
+  border-color: transparent;
+
+  &:hover {
+    background-color: green;
+  }
+}

@@ -1,0 +1,51 @@
+.contactform {
+  margin-bottom: 5rem;
+
+  &__row {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__titlebox {
+    margin-bottom: 1rem;
+
+    p {
+      font-family: var(--body-font-family);
+      font-size: 1.4rem;
+      color: #464646;
+      line-height: 1.4;
+    }
+  }
+
+  &__form {
+    text-align: left;
+
+    & .form-label {
+      color: #3d5361;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+
+      & a {
+        color: #3d5361;
+      }
+    }
+
+    & .form-control {
+      appearance: none;
+      background-color: #eee;
+      max-width: 100%;
+      border-width: 0;
+      border-radius: 0;
+      color: #999;
+      font-size: 14px;
+      padding: 16px;
+      line-height: 1.7em;
+      border-style: solid;
+    }
+
+    & button {
+      width: fit-content;
+      margin-top: 1rem;
+    }
+  }
+}

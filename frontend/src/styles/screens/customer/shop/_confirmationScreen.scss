@@ -1,0 +1,16 @@
+@use '../../../abstracts' as *;
+
+.confirmation {
+  margin: 4rem 0;
+
+  & .receipt-button {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+
+    & .main-btn {
+      width: fit-content;
+    }
+  }
+}

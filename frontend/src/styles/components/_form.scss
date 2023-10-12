@@ -1,0 +1,9 @@
+// FORM
+.form {
+  display: grid;
+  row-gap: 1rem;
+
+  &__group {
+    display: grid;
+  }
+}

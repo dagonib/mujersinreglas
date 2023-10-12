@@ -1,0 +1,38 @@
+/*======== BREAKPOINTS ==========*/
+
+$breakpoints: (
+  // Desde 993px hasta 1200px
+  extra-large: 1200px,
+
+  // Desde 769px hasta 992px
+  large: 992px,
+
+  // Desde 577px hasta 768px
+  medium: 768px,
+
+  // Desde 351px hasta 576px
+  small: 576px,
+
+  // Desde 0px hasta 350px
+  extra-small: 350px
+);
+
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+}
+
+/* Extra-Small: Desde 0px hasta 350px */
+@media screen and (max-width: 350px) {
+}

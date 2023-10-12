@@ -1,0 +1,94 @@
+@use '../../../abstracts' as *;
+
+.hero-contact {
+  margin-top: 4rem;
+
+  & .contact-header {
+    & .title {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      color: #3d5361;
+      font-weight: 900;
+    }
+
+    & .text {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: $color-accent;
+
+      & span {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .hero-contact {
+    & .contact-header {
+      & .title {
+        font-size: 2.6rem;
+      }
+
+      & .text {
+      }
+    }
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .hero-contact {
+    & .contact-header {
+      & .title {
+        font-size: 2.4rem;
+      }
+
+      & .text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .hero-contact {
+    & .contact-header {
+      & .title {
+      }
+
+      & .text {
+      }
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .hero-contact {
+    & .contact-header {
+      & .title {
+        font-size: 2.2rem;
+      }
+
+      & .text {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+/* Extra-Small: Desde 0px hasta 350px */
+@media screen and (max-width: 350px) {
+  .hero-contact {
+    & .contact-header {
+      & .title {
+      }
+
+      & .text {
+      }
+    }
+  }
+}

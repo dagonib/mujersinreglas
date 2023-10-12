@@ -1,0 +1,32 @@
+@use '../../../abstracts' as *;
+
+.payment {
+  margin: 4rem 0;
+
+  & .comeback-btn {
+    max-width: max-content;
+  }
+
+  & .paypal-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  & .buttons-container {
+    max-width: 500px;
+  }
+
+  & .totalPrice-box {
+    display: flex;
+    justify-content: center;
+  }
+  & .totalPrice {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 1rem 1rem 1rem;
+    background-color: $color-primary;
+  }
+}

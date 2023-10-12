@@ -1,0 +1,14 @@
+@use '../../../abstracts' as *;
+
+.comentaries {
+  margin-bottom: 8rem;
+
+  &__title {
+    font-family: var(--prime-font-family);
+    font-size: 3rem;
+    font-weight: 800;
+    color: #3d5361;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}

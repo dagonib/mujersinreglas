@@ -1,0 +1,24 @@
+@use '../../../abstracts' as *;
+
+.subscribe {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  & .contact-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & p {
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: $color-primary-light;
+    padding: 2rem;
+  }
+
+  & a {
+    margin-top: 1rem;
+    width: fit-content;
+  }
+}

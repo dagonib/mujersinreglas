@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 0rem;
+  background-color: $color-primary;
+  @include font-size($button-alt-font-sizes);
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+  transition: 0.8s scale ease-in-out;
+
+  &:hover {
+    background-color: scale-color($color-primary, $lightness: -20%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

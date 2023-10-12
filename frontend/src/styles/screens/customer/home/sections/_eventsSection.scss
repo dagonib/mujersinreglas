@@ -1,0 +1,24 @@
+@use '../../../../abstracts' as *;
+
+.events {
+  margin-top: 8rem;
+
+  & .title {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  & .title-sm-section {
+    background: rgb(61, 83, 97);
+    background: linear-gradient(
+      90deg,
+      rgba(61, 83, 97, 1) 0%,
+      rgb(85 126 151) 68%
+    );
+    padding: 4px 17px;
+    border-radius: 20px;
+    width: fit-content;
+  }
+}

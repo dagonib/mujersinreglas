@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.comentary {
+  text-align: center;
+  max-width: 70vw;
+  margin: 0 auto;
+
+  & .author {
+    font-style: italic;
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .comentary {
+    max-width: 100vw;
+    & .author {
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.event-update {
+  margin-bottom: 2rem;
+  &-main_content {
+    font-size: 0.8rem;
+    color: #50dd9a;
+    font-weight: 600;
+
+    & input,
+    textarea,
+    select {
+      font-size: 0.9rem;
+    }
+
+    &__date {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      padding: 1.2rem;
+      border: 1px solid #767676;
+    }
+    &__data {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      margin-top: 1rem;
+      align-items: start;
+
+      & .left,
+      & .center,
+      & .right {
+        display: grid;
+        row-gap: 1rem;
+      }
+
+      & .left {
+        & .type {
+          width: fit-content;
+          margin-top: 0;
+        }
+      }
+    }
+    &__submitbtn {
+      margin-top: 1rem;
+      background-color: #50dd9a;
+      color: #212529;
+      border: transparent;
+
+      &:hover {
+        color: white;
+        background-color: #00825d;
+      }
+    }
+  }
+
+  // Elementos del formulario
+  & .dateGroup,
+  & .timeStart,
+  & .timeEnd {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// MUI Components Styles
+.event-update {
+  & .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    background-color: #ffffff;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  & .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    color: #212529;
+    padding: 0.375rem 0 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: fit-content;
+    appearance: none;
+    font-family: var(--body-font-family);
+  }
+
+  & .css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+    background-color: #50dd9a;
+    margin-right: 0;
+    padding: 0.375rem 0.75rem 0.1rem 0.75rem;
+    border-radius: 0rem 0.375rem 0.375rem 0rem;
+
+    &:hover {
+      color: white;
+      background-color: #00825d;
+      padding: 0.375rem 0.75rem 0.1rem 0.75rem;
+    }
+  }
+
+  &
+    .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-error
+    .MuiOutlinedInput-notchedOutline {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0;
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .event-update {
+    &-main_content {
+      &__data {
+        grid-template-columns: repeat(2, 1fr);
+
+        & .right {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .event-update {
+    &-main_content {
+      &__date {
+        grid-template-columns: repeat(1, 1fr);
+        & .dateGroup {
+          grid-column: 1 / -1;
+        }
+
+        & .timeStart,
+        & .timeEnd {
+          margin-top: 1rem;
+        }
+      }
+      &__data {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+/* Extra-Small: Desde 0px hasta 350px */
+@media screen and (max-width: 350px) {
+  .event-update {
+    &-main_content {
+      &__date {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

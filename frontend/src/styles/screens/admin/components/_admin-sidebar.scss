@@ -1,0 +1,29 @@
+@use '../../../abstracts' as *;
+
+.admin-sidebar {
+  width: 200px;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border-right: 1px solid rgb(219, 219, 219);
+
+  & .user {
+    border: 1px solid $color-accent;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  & .nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 1rem;
+
+    & i {
+      margin-right: 0.5rem;
+    }
+  }
+}

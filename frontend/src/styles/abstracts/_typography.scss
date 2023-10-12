@@ -1,0 +1,222 @@
+// TYPOGRAPHY
+/*============ Typography =============*/
+/* .5rem = 8px | 1rem = 16px | 1px = 0.0625rem */
+
+// Title Section
+$title-hero-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 3.5rem,
+  // Desde 993px hasta 1200px
+  extra-large: 3.2rem,
+  // Desde 769px hasta 992px
+  large: 2.5rem,
+  // Desde 577px hasta 768px
+  medium: 2.2rem,
+  // Desde 351px hasta 576px
+  small: 2.2rem,
+  // Desde 0px hasta 350px
+  extra-small: 2.2rem
+);
+
+// Title Section
+$title-section-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 6.5rem,
+  // Desde 993px hasta 1200px
+  extra-large: 6.5rem,
+  // Desde 769px hasta 992px
+  large: 5.4rem,
+  // Desde 577px hasta 768px
+  medium: 3.8rem,
+  // Desde 351px hasta 576px
+  small: 2.9rem,
+  // Desde 0px hasta 350px
+  extra-small: 2.7rem
+);
+
+$title-md-section-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 2.8rem,
+  // Desde 993px hasta 1200px
+  extra-large: 2.8rem,
+  // Desde 769px hasta 992px
+  large: 2.1rem,
+  // Desde 577px hasta 768px
+  medium: 1.7rem,
+  // Desde 351px hasta 576px
+  small: 1.6rem,
+  // Desde 0px hasta 350px
+  extra-small: 1.6rem
+);
+
+$title-md-cursive-section-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 3.6rem,
+  // Desde 993px hasta 1200px
+  extra-large: 3.4rem,
+  // Desde 769px hasta 992px
+  large: 3.4rem,
+  // Desde 577px hasta 768px
+  medium: 3rem,
+  // Desde 351px hasta 576px
+  small: 2.5rem,
+  // Desde 0px hasta 350px
+  extra-small: 2.2rem
+);
+
+$title-sm-section-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 1.15rem,
+  // Desde 993px hasta 1200px
+  extra-large: 1.15rem,
+  // Desde 769px hasta 992px
+  large: 1.15rem,
+  // Desde 577px hasta 768px
+  medium: 1.1rem,
+  // Desde 351px hasta 576px
+  small: 1rem,
+  // Desde 0px hasta 350px
+  extra-small: 0.9rem
+);
+
+$message-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 2.2rem,
+  // Desde 993px hasta 1200px
+  extra-large: 2.2rem,
+  // Desde 769px hasta 992px
+  large: 2rem,
+  // Desde 577px hasta 768px
+  medium: 2rem,
+  // Desde 351px hasta 576px
+  small: 1.6rem,
+  // Desde 0px hasta 350px
+  extra-small: 1.6rem
+);
+
+$subtitle-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 1.15rem,
+  // Desde 993px hasta 1200px
+  extra-large: 1rem,
+  // Desde 769px hasta 992px
+  large: 0.9rem,
+  // Desde 577px hasta 768px
+  medium: 0.9rem,
+  // Desde 351px hasta 576px
+  small: 0.9rem,
+  // Desde 0px hasta 350px
+  extra-small: 0.9rem
+);
+
+$paragraph-font-sizes: (
+  null: 1.4rem,
+  large: 1.4rem,
+  medium: 1.1rem,
+  small: 1rem,
+  extra-small: 1rem,
+);
+
+$info-font-sizes: (
+  null: 1.1rem,
+  large: 1.1rem,
+  medium: 0.9rem,
+  small: 0.9rem,
+  extra-small: 0.9rem,
+);
+
+/*------ Button --------*/
+$button-font-sizes: (
+  // Desde 1201px hasta inf.
+  null: 1rem,
+  // Desde 993px hasta 1200px
+  extra-large: 1rem,
+  // Desde 769px hasta 992px
+  large: 0.9rem,
+  // Desde 577px hasta 768px
+  medium: 0.9rem,
+  // Desde 351px hasta 576px
+  small: 0.8rem,
+  // Desde 0px hasta 350px
+  extra-small: 0.8rem
+);
+
+// Borrar
+/*--------------- SECCIONES----------------------- */
+//--Normal
+$section-title-font-size: (
+  null: 3.4rem,
+  large: 3rem,
+  medium: 3.2rem,
+  small: 2.8rem,
+  extra-small: 1.8rem,
+);
+
+//--Marked
+$section-title-marked-font-size: (
+  null: 3.6rem,
+  large: 3.4rem,
+  medium: 3.2rem,
+  small: 2.8rem,
+  extra-small: 1.8rem,
+);
+
+$paragraph-marked-font-sizes: (
+  null: 2rem,
+  large: 2rem,
+  medium: 1.8rem,
+  small: 1.6rem,
+  extra-small: 1.4rem,
+);
+
+/*------------- SECCIONES ALTERNATIVAS----------- */
+/*------ Hero --------*/
+$hero-title-font-size: (
+  null: 3rem,
+  large: 3rem,
+  medium: 2.5rem,
+  small: 2rem,
+  extra-small: 1.8rem,
+);
+
+$prime-title-font-size: (
+  null: 3.2rem,
+  large: 3.2rem,
+  medium: 3rem,
+  small: 2.8rem,
+  extra-small: 2.4rem,
+);
+
+$prime-paragraph-font-size: (
+  null: 2rem,
+  large: 2rem,
+  medium: 1.8rem,
+  small: 1.6rem,
+  extra-small: 1.6rem,
+);
+
+/*------ Subscription --------*/
+
+/*------ Form --------*/
+$input-alt-font-sizes: (
+  null: 0.9rem,
+  large: 0.9rem,
+  medium: 0.8rem,
+  small: 0.8rem,
+  extra-small: 0.8rem,
+);
+
+/*------ Button --------*/
+$button-alt-font-sizes: (
+  null: 1rem,
+  extra-small: 0.8rem,
+);
+
+/*----- Links ------- */
+$text-link-alt-font-size: (
+  null: 1rem,
+  large: 1rem,
+  medium: 0.9rem,
+  small: 0.8rem,
+  extra-small: 0.8rem,
+);

@@ -1,0 +1,17 @@
+@use '../../../abstracts' as *;
+
+.phrase {
+  text-align: center;
+
+  &__row {
+    padding: 0 1rem;
+    & p:first-child {
+      color: $color-accent;
+    }
+
+    & p:last-child {
+      color: $color-primary;
+      font-weight: 600;
+    }
+  }
+}

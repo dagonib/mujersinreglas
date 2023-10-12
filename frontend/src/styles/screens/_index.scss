@@ -1,0 +1,25 @@
+// SCREENS
+//Customer Screens
+//=== HomeScreen ==== //
+@forward './customer/home/homeScreen';
+//=== ShopScreen ==== //
+@forward './customer/shop/shopScreen';
+@forward './customer/shop/cartScreen';
+@forward './customer/shop/paymentScreen';
+@forward './customer/shop/productScreen';
+@forward './customer/shop/shippingScreen';
+@forward './customer/shop/confirmationScreen';
+//=== Education ==== //
+@forward './customer/education';
+//=== Agenda ==== //
+@forward './customer/agenda';
+//=== Contact === //
+@forward './customer/contact';
+//=== Information === //
+@forward './customer/information';
+
+//Account
+@forward './account/account';
+
+// Admin
+@forward './admin/admin';

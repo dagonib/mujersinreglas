@@ -1,0 +1,229 @@
+@use '../../../abstracts' as *;
+
+.information {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  &__header {
+    margin-bottom: 1.6rem;
+
+    &--title {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      color: #3d5361;
+      font-weight: 900;
+    }
+
+    &--btn {
+      width: fit-content;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &--item {
+      margin-bottom: 2rem;
+    }
+
+    &--title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &--text {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+
+    &--list {
+      margin-left: 2rem !important;
+    }
+
+    &--btn {
+      margin-left: 2rem;
+    }
+
+    & .marginLeft {
+      margin-left: 3.5rem;
+    }
+
+    & span.italic {
+      font-style: italic;
+    }
+
+    & span.bold {
+      font-weight: 700;
+    }
+
+    & span.underline {
+      text-decoration: underline;
+    }
+  }
+
+  &__accordion {
+    padding-left: 2rem;
+
+    & .accordion-item {
+      margin-bottom: 1rem;
+      border-radius: 0;
+
+      & .accordion-header {
+        & .accordion-button {
+          border-radius: 0;
+          border: 1px solid $color-primary-light;
+          box-shadow: 0 0 0 white;
+          &:active {
+            transform: none;
+          }
+          &:focus {
+            border-color: transparent;
+            box-shadow: 0 0 0 0 $color-primary;
+            background-color: $color-primary;
+          }
+          &:not(.collapsed) {
+            background-color: $color-primary;
+            color: #000000;
+            &::after {
+              background-image: var(--bs-accordion-btn-icon);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .information {
+    &__header {
+      &--title {
+        font-size: 2.4rem;
+      }
+    }
+
+    &__content {
+      &--item {
+      }
+
+      &--title {
+        font-size: 1.2rem;
+      }
+
+      &--text {
+        font-size: 1.1rem;
+      }
+
+      &--btn {
+      }
+    }
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .information {
+    &__header {
+      &--title {
+        font-size: 2rem;
+      }
+    }
+
+    &__content {
+      &--item {
+      }
+
+      &--title {
+      }
+
+      &--text {
+      }
+
+      &--btn {
+      }
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .information {
+    &__header {
+      &--title {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__content {
+      &--item {
+      }
+
+      &--title {
+      }
+
+      &--text {
+        margin-left: 1rem;
+
+        & span {
+          font-weight: 800;
+        }
+      }
+
+      &--btn {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .information {
+    &__header {
+      &--title {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__content {
+      &--item {
+      }
+
+      &--title {
+        font-size: 1rem;
+      }
+
+      &--text {
+        font-size: 0.9rem;
+      }
+
+      &--btn {
+      }
+    }
+  }
+}
+
+/* Extra-Small: Desde 0px hasta 350px */
+@media screen and (max-width: 350px) {
+  .information {
+    &__header {
+    }
+
+    &__content {
+      &--item {
+      }
+
+      &--title {
+      }
+
+      &--text {
+      }
+
+      &--btn {
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// COMPONENTS
+@forward './components';
+@forward './orderdetails';
+@forward './invoiceprint';
+@forward './dashboard';
+@forward './admin-event-list';
+@forward './admin-event-update';
+
+.back {
+  color: #000000;
+  margin: 1rem;
+  width: fit-content;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: #ffffff;
+  }
+}

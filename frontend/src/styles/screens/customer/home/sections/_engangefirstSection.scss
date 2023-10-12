@@ -1,0 +1,163 @@
+@use '../../../../abstracts' as *;
+
+.engagefirst {
+  margin-top: 12rem;
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__left {
+    grid-row: 1/-1;
+    grid-column: 1;
+    background: $color-primary-light;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 2rem;
+
+    //message
+    & p {
+      font-family: var(--prime-font-family);
+      font-size: 3rem;
+      font-weight: 800;
+      color: $color-accent;
+    }
+  }
+
+  &__right {
+    grid-row: 1/-1;
+    grid-column: 2;
+
+    display: grid;
+    & img {
+      grid-row: 1/-1;
+      grid-column: 1 / -1;
+    }
+
+    & p {
+      grid-row: 1/-1;
+      grid-column: 1 / -1;
+      color: white;
+      align-self: end;
+      justify-self: end;
+      padding: 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  &__title {
+    grid-row: 2;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+
+    h1 {
+      font-size: 5.5rem;
+      text-shadow: 4px 5px 1px $color-primary;
+    }
+  }
+}
+
+/* Extra large: Desde 993px hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .engagefirst {
+    &__left {
+      row-gap: 0.9rem;
+      font-size: 2.5rem;
+    }
+    &__right {
+      // background-image: url('../../../../../assets/images/home/engage-first-xl.png');
+    }
+
+    &__title {
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}
+
+/* Large: Desde 769px hasta 992px */
+@media screen and (max-width: 992px) {
+  .engagefirst {
+    &__left {
+      & p {
+        font-size: 2.2rem;
+      }
+    }
+
+    &__right {
+      & p {
+        font-size: 0.6rem;
+      }
+    }
+
+    &__title {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+/* Medium: Desde 577px hasta 768px */
+@media screen and (max-width: 768px) {
+  .engagefirst {
+    &__left {
+      & p {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__right {
+      & p {
+        font-size: 0.5rem;
+      }
+    }
+
+    &__title {
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+
+/* Small: Desde 351px hasta 576px */
+@media screen and (max-width: 576px) {
+  .engagefirst {
+    margin-top: 8rem;
+    &__row {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+    }
+
+    &__left {
+      grid-row: 3 / -1;
+      grid-column: 1/-1;
+
+      & p {
+        font-size: 2rem;
+      }
+    }
+
+    &__right {
+      grid-row: 2 / 3;
+      grid-column: 1/-1;
+    }
+
+    &__title {
+      grid-row: 1;
+      grid-column: 1/-1;
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
