@@ -116,9 +116,6 @@ const updateProductStock = asyncHandler(async (productId, quantity) => {
 });
 
 let endpointSecret;
-//  endpointSecret = process.env.END_POINT_SECRET;
-//   'whsec_89b2c727a9dd05ba222ef76629b0b215fb713b2cf0bbac901ceabe7ce5555b9b';
-
 const stripeHook = asyncHandler(async (req, res) => {
   const sig = req.headers['stripe-signature'];
   let data;
