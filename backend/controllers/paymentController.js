@@ -3,11 +3,6 @@ import Stripe from 'stripe';
 import Order from '../models/orderModel.js';
 import Invoice from '../models/invoiceModel.js';
 import Product from '../models/productModel.js';
-
-// const stripe = new Stripe(
-//   'sk_test_51NmavvCkeUGHgrykH6nna7RTLmVITu7qqFt9vJpkCBiLWuWFdUrVK0Sn7dcgwdtLQqsD6y7McFIKBz6Emtkct7Nd00iO5y3Ovy'
-// );
-
 import dotenv from 'dotenv';
 
 dotenv.config();
